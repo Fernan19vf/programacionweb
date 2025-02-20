@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    {% block titulo %}{% endblock %}
+    <title>Programadores Web</title>
+</head>
+<body>
+    <img src="{% static '/img/e5d53cad83bc955e9e8f5252bd4b4f9c - copia.png' %}" alt="Carro">
+    <h1>Programadores Web</h1>
+    <h3>Fernando Jared Cruz De La Cruz</h3>
+    <ul>
+        <li><a href="/">Comienza</a></li>
+        <li><a href="/servicios/">servicios</a></li>
+        <li><a href="/contactos/">Contactos</a></li>
+    </ul>
+    {% block containt %} {% endblock %}
+
+</body>
+</html>
